@@ -8,9 +8,9 @@ Proyecto donde se describe el uso del shield para Arduino/Raspberry con conectiv
 Introducción
 ------------
 
-En este proyecto se explicarán las caracteristicas de los Shields para Arduino con conectividad sigfox (Wisol o M2COMM), asi tambien se mostraran programas de ejemplo sencillos, para mostrar como interactuar con los módulos de conectividad. 
+En este proyecto se explicarán las caracteristicas de los Shields para Arduino con conectividad sigfox (Wisol o M2COMM), asi como tambièn se mostrarán programas de ejemplo sencillos, para mostrar como interactuar con los módulos de conectividad. 
 
-A continuación se muestran los dos tipos de shields con los módulos de conectividad Wisol (Izquierda) y M2COMM (Derecha). 
+A continuación se muestran los dos tipos de shields con los módulos de conectividad Wisol (Izquierda) y M2COMM (Derecha). Los dos shields tienen el mismo funcionamiento, la única diferencia es el modulo que utilizan para la comunicación. El módulo Wisol acepta la comunicación bidireccional, es decir permite uplinks y downlinks, mientras que el módulo M2COMM únicamente uplinks. Ademas, algunas instrucciones difieren entre los módulos, sin embargo la instrucción para enviar mensajes por sigfox es la misma para ambos casos (AT$SF=“PAYLOAD”).
 
 ![shield_mod](https://github.com/Iotnet/Shield_Wisol_M2COMM/blob/master/%20imagenes/shield_mod.png?raw=true)
 
