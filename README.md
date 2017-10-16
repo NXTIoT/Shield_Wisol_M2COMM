@@ -12,7 +12,7 @@ En este proyecto se explicarán las caracteristicas de los Shields para Arduino 
 
 A continuación se muestran los dos tipos de shields con los módulos de conectividad Wisol (Izquierda) y M2COMM (Derecha). 
 
-https://github.com/Iotnet/Shield_Wisol_M2COMM/blob/master/images/shield_mod.png?raw=true)
+![shield_mod](https://github.com/Iotnet/Shield_Wisol_M2COMM/blob/master/images/shield_mod.png?raw=true)
 
 Ambos módulos se comunican con el microcontrolador por el puerto serial (Pines Tx y Rx de la placa Arduino) por lo que el shield DEBE RETIRARSE CADA VEZ QUE SE DESEE CARGAR UN PROGRAMA A LA PLACA DE ARDUINO. Asi mismo, para activar los modulos y poder mandar mensajes por medio de la red Sigfox, los pines del 2 al 5 deben ponerse en alto antes de enviar un mensaje.
 
