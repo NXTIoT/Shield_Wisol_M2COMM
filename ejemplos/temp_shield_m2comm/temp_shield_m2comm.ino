@@ -43,11 +43,11 @@ void leer_sensor()
 
 void loop()
 {
-  //manda la temperatura cada 10 minutos
+  //manda la temperatura cada 5 minutos
   //enable_module();
   leer_sensor();
   disable_module();
-  delay(3000000);
+  delay(300000);
 }
 void enable_module()
 {
@@ -63,5 +63,4 @@ void disable_module()
    digitalWrite(4, LOW);
    digitalWrite(5, LOW);
 }
-
 
