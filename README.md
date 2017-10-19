@@ -21,9 +21,15 @@ A continuación se muestran los dos tipos de shields con los módulos de conecti
 Ambos módulos se comunican con el microcontrolador por el puerto serial (Pines Tx y Rx de la placa Arduino) por lo que el shield DEBE RETIRARSE CADA VEZ QUE SE DESEE CARGAR UN PROGRAMA A LA PLACA DE ARDUINO. Asi mismo, para activar los modulos y poder mandar mensajes por medio de la red Sigfox, los pines del 2 al 5 deben ponerse en alto antes de enviar un mensaje.
 
 Ejemplo
--------
+———
 
-En este ejemplo se utilizará el sensor LM35 para mandar la información de la temperatura por medio de Sigfox. Después de que se obtiene el valor de la temperatura, se transforma el dato en flotante a Hexadecimal de 4 bytes en formato little Endian, es decir, el byte menos significante se encuentra a la izquierda.
+El siguiente ejemplo tiene como finalidad el conocer como mandar un dato por medio de Sigfox.
+
+### Sensor de Temperatura
+
+En este ejemplo se utilizará el sensor LM35 para mandar la información de la temperatura por medio de Sigfox. Descargar el código para el modulo (Wisol)[https://github.com/Iotnet/Shield_Wisol_M2COMM/blob/master/ejemplos/temp_shield_wisol/temp_shield_wisol.ino] o (M2COMM)[https://github.com/Iotnet/Shield_Wisol_M2COMM/blob/master/ejemplos/temp_shield_m2comm/temp_shield_m2comm.ino] según sea el caso. 
+
+Después de que se obtiene el valor de la temperatura, se transforma el dato en flotante a Hexadecimal de 4 bytes en formato little Endian, es decir, el byte menos significante se encuentra a la izquierda.
 
 
 
