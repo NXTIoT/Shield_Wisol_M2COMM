@@ -21,7 +21,7 @@ A continuación se muestran los dos tipos de shields con los módulos de conecti
 Ambos módulos se comunican con el microcontrolador por el puerto serial (Pines Tx y Rx de la placa Arduino) por lo que el shield DEBE RETIRARSE CADA VEZ QUE SE DESEE CARGAR UN PROGRAMA A LA PLACA DE ARDUINO. Asi mismo, para activar los modulos y poder mandar mensajes por medio de la red Sigfox, los pines del 2 al 5 deben ponerse en alto antes de enviar un mensaje.
 
 Ejemplo
-———
+-------
 
 El siguiente ejemplo tiene como finalidad el conocer como mandar un dato por medio de Sigfox.
 
