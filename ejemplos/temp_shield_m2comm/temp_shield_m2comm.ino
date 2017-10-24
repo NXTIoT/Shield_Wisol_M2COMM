@@ -20,7 +20,7 @@ void leer_sensor()
   Serial.println(temp);
   //convierte el dato a bytes y lo agrega a nuestro mensaje a enviar
   byte* a1 = (byte*) &temp;  
-  String str1,str2,str3,str4;
+  String str1;
   for(int i=0;i<4;i++)
   {
     str1=String(a1[i], HEX);
@@ -36,7 +36,7 @@ void leer_sensor()
   bufer+=bufer2;
   enable_module();
   Serial.print("AT$RC\r\n");
-  delay(100);
+  delay(500);
   Serial.print(bufer);
   delay(3000);
 }
@@ -44,10 +44,9 @@ void leer_sensor()
 void loop()
 {
   //manda la temperatura cada 5 minutos
-  //enable_module();
   leer_sensor();
   disable_module();
-  delay(300000);
+  delay(30000);
 }
 void enable_module()
 {
